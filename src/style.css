@@ -50,6 +50,15 @@ a:hover {
     text-decoration: underline;
 }
 
+.active {
+    color: #5a6275;
+    cursor: default;
+}
+
+.active:hover {
+    text-decoration: none;
+}
+
 #description {
     text-transform: capitalize;
 }
