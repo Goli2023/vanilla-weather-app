@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a6275;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+}
+
+.col-6 {
+    font-size: 16px;
+}
+
+.weather-app {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #5a6275;
+    border-radius: 5px;
+}
