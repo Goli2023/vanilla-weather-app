@@ -10,7 +10,11 @@ h1 {
     line-height: 28px;
 }
 
-p {
+ul {
+    list-style: none;
+}
+
+li {
     font-size: 16px;
     font-weight: 100;
     line-height: 28px;
@@ -20,6 +24,7 @@ h2 {
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
+    margin-top: 10px;
 }
 
 a {
