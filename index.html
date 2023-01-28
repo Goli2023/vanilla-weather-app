@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
 
     <title>weather App</title>
@@ -15,23 +16,25 @@
 <body>
     <div class="weather-app">
         <div class="container">
-            <h1>
-                Tehran, Iran
+            <h1 id="city">
+
             </h1>
             <p>
-                Sun, 18 December 10:00
+                Sun, 18 Dec 10:00,
+                <span id="description"> </span>
             </p>
             <h2>
-                ☀ 8
-                <span class="units"> °C| <a href="#"> °F </a> </span>
+                ☀
+                <span id="temperature"> </span>
+                <span class="units">°C |<a href="#">°F</a> </span>
             </h2>
             <hr />
             <div class="row">
                 <div class="col-6">
-                    Humidity: 54%
+                    Humidity: <span id="humidity"> </span>%
                 </div>
                 <div class="col-6">
-                    Wind: 10 km/h
+                    Wind: <span id="wind"></span>km/h
                 </div>
             </div>
             <hr />
