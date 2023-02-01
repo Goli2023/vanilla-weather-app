@@ -59,20 +59,20 @@ a:hover {
     text-decoration: none;
 }
 
-.weather-forcast {
+.weather-forecast {
     margin-top: 20px;
 }
 
-.weather-forcast-date {
+.weather-forecast-date {
     font-weight: 600;
     font-size: 16px;
 }
 
-.weather-forcast-temperature {
+.weather-forecast-temperature {
     font-size: 14px;
 }
 
-.weather-forcast-temperature-min {
+.weather-forecast-temperature-min {
     opacity: 0.9;
 }
 
