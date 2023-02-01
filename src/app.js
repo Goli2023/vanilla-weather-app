@@ -23,7 +23,7 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
@@ -52,6 +52,12 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForcast(coordinates) {
+  let apiKey = "0td6fef782e8b046o3c9bf5a39fbbf05";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
@@ -74,6 +80,8 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconElement.setAttribute("alt", response.data.condition.description);
+
+  getForcast(response.data.coordinates);
 }
 
 function search(city) {
@@ -118,4 +126,3 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", dispalycelciusTemperature);
 
 search("Tehran");
-displayForecast();
