@@ -37,6 +37,7 @@ a {
     padding: 20px;
     border: 1px solid #5a6275;
     border-radius: 5px;
+    background: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
 .units {
